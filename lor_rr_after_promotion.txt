@@ -1,0 +1,29 @@
+C:\Users\amira>ssh -i myKey.pem ec2-user@54.167.5.190
+The authenticity of host '54.167.5.190 (54.167.5.190)' can't be established.
+ED25519 key fingerprint is SHA256:BaeCW3lIolVUTh3XAUgD4x1sH70sWHEMi7MvDJy0Cvo.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '54.167.5.190' (ED25519) to the list of known hosts.
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+
+MySQL [(none)]> use udacity
+Database changed
+
+MySQL [udacity]> INSERT INTO test_table VALUES ('TEST TWO');
+
+MySQL [udacity]> SELECT * FROM test_table->;
++-----------+
+| message   |
++-----------+
+| TEST      |
+| TEST TWO  |
++-----------+
